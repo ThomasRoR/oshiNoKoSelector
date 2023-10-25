@@ -1,0 +1,24 @@
+
+body{
+    font-family: Cantoria;
+    color:white;
+    background-color: black;
+    background-image: url(https://wallscloud.net/img/resize/1920/1080/MM/2019-10-14-zvezdnoe_nebo_mlechnyj_put_zvezdy_149198_3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.imgCabecalho {
+    max-height: 100px;
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+
+}
+.personagemGrande{
+    max-height: 500px;
+}
+.iconePersonagem {
+    max-height: 150px;
+}
