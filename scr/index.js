@@ -7,20 +7,36 @@ personagens.forEach(personagem => {
             window.scrollTo({top : 0, behavior: 'smooth'})
         }
 
-        const personagemSeleciondo = document.querySelector('.selecionado')
-        personagemSeleciondo.classList.remove('selecionado')
+        removerSelecaoDoPersonagem()
 
         personagem.classList.add('selecionado');
 
-        const imagemPersonagemGrande = document.querySelector('.personagemGrande')
-        const idPersonagem = personagem.attributes.id.value;
-        imagemPersonagemGrande.src = "/scr/card/card-" + (idPersonagem) + ".png";
+        alterarImagemPersonagemSelecionado(personagem)
 
-        const nomePersonagem = document.getElementById('nome-personagem');
-        nomePersonagem.innerText = personagem.getAttribute('data-name');
+        alterarNomePersonagemSelecionado(personagem)
         
-        const descricaoPersonagem = document.getElementById('descricao-personagem');
-        descricaoPersonagem.innerText = personagem.getAttribute('data-description');
+        alterarDescricaoPersonagemSelecionado(personagem)
 
     })
 })
+
+function alterarDescricaoPersonagemSelecionado(personagem) {
+    const descricaoPersonagem = document.getElementById('descricao-personagem')
+    descricaoPersonagem.innerText = personagem.getAttribute('data-description')
+}
+
+function alterarNomePersonagemSelecionado(personagem) {
+    const nomePersonagem = document.getElementById('nome-personagem')
+    nomePersonagem.innerText = personagem.getAttribute('data-name')
+}
+
+function alterarImagemPersonagemSelecionado(personagem) {
+    const imagemPersonagemGrande = document.querySelector('.personagemGrande')
+    const idPersonagem = personagem.attributes.id.value
+    imagemPersonagemGrande.src = "/scr/card/card-" + (idPersonagem) + ".png"
+}
+
+function removerSelecaoDoPersonagem() {
+    const personagemSeleciondo = document.querySelector('.selecionado')
+    personagemSeleciondo.classList.remove('selecionado')
+}

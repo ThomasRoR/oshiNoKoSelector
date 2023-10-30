@@ -70,7 +70,7 @@ body::before{
 
 .lista-de-personagens li{
     max-width: 150px;
-
+    border-bottom: 4px solid #DD4CA0;
 }
 .lista-de-personagens .personagem.selecionado {
     box-shadow: 0px 0px 25px 8px #DD4CA0;
