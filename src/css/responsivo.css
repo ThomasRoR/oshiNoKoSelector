@@ -1,4 +1,4 @@
-@media (max-width:1080px){
+@media (max-width:1000px){
     
 .selecao-de-personagens {
     max-width: 520px;
@@ -32,4 +32,12 @@
     width: 80%;
     margin: 0 auto;
 }
+}
+@media (max-width:1400px) {
+    .lista-de-personagens li{
+        max-width: 120px;
+    }
+    .personagemGrande{
+        max-height: 400px;
+    }
 }
